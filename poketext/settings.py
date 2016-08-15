@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = '+sbtc&fs1v^#g451otynn1iop76_y5+i48n67u=d_nx1&m+i-)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DEBUG = True
 
@@ -69,6 +69,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+TWILIO_ACCOUNT_SID=AC7f8928330d23fbed7c847414fe64b9c1
+TWILIO_AUTH_TOKEN=55ed4918a803db72e275b8811235c8fe
 
 DATABASES = {
     'default': {
@@ -94,4 +96,3 @@ STATICFILES_DIRS = (
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-

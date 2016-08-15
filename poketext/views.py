@@ -1,7 +1,7 @@
 import json
 import requests
 import urlparse
-from django_twilio.views import twilio_view
+from django_twilio.decorators import twilio_view
 from twilio.twiml import Response
 #from django.views.decorators.csrf import csrf_exempt
 BASE_URL = 'http://pokeapi.co'
