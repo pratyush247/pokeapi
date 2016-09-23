@@ -39,7 +39,11 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_twilio',
+    'poketext',
 )
+
+TWILIO_ACCOUNT_SID="AC012c2469bdab6773ca46b2bf189ad510"
+TWILIO_AUTH_TOKEN="55ed4918a803db72e275b8811235c8fe"
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -68,9 +72,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
-TWILIO_ACCOUNT_SID=AC7f8928330d23fbed7c847414fe64b9c1
-TWILIO_AUTH_TOKEN=55ed4918a803db72e275b8811235c8fe
 
 DATABASES = {
     'default': {
