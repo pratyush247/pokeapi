@@ -39,7 +39,11 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_twilio',
+    'poketext',
 )
+
+TWILIO_ACCOUNT_SID="AC012c2469bdab6773ca46b2bf189ad510"
+TWILIO_AUTH_TOKEN="55ed4918a803db72e275b8811235c8fe"
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -69,12 +73,19 @@ USE_L10N = True
 
 USE_TZ = True
 
+<<<<<<< HEAD
 if DEBUG:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
+=======
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+>>>>>>> secondary
     }
 else:
     DATABASES = {}
@@ -94,5 +105,8 @@ STATICFILES_DIRS = (
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+<<<<<<< HEAD
 
 DJANGO_TWILIO_FORGERY_PROTECTION = False
+=======
+>>>>>>> secondary
